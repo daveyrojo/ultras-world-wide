@@ -1,2 +1,5 @@
-const flightFrom = document.getElementById("flight-from");
-const flightTo = document.getElementById("flight-to");
+const leagueInput = document.getElementById("inputLeague");
+const teamInput = document.getElementById("inputTeam");
+const searchButton = document.getElementById("searchButton");
+
+

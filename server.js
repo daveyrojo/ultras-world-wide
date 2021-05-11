@@ -5,9 +5,11 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const mongoose = require("mongoose");
 const passport = require("passport");
+const Logger = require("morgan");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(Logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

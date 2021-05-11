@@ -8,7 +8,7 @@ const APIKEY = process.env.FOOTY_API_KEY;
 
 
 module.exports = {
-  getStanding: function (req, res) {
+  getStandings: function (req, res) {
     console.log("GET FOOTY STANDINGS LINE TEN/10: ");
 
     const leagueID = 253;
@@ -20,10 +20,11 @@ module.exports = {
       .get(url)
       .then((res) => {
         
-        res.json(res);
+        res.send(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
   },
 };
+

@@ -1,13 +1,17 @@
+//dependency variables
 const path = require("path");
 const express = require("express");
-const routes = require("./routes");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const mongoose = require("mongoose");
 const passport = require("passport");
 const Logger = require("morgan");
-const app = express();
+
 const PORT = process.env.PORT || 3000;
+
+//file dependencies
+const app = express();
+const routes = require("./routes");
 
 app.use(Logger("dev"));
 app.use(express.json());

@@ -2,7 +2,7 @@ const router = require("express").Router();
 const soccerController = require("../../controllers/soccerController.js");
 
 //endpoint /api/sport
-
-router.route("/").get(sportController.getStandings);
+console.log(`APIROUTES/SOCCERROUTES`);
+router.route("/").get(soccerController.getStandings);
 
 module.exports = router;
